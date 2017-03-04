@@ -1,0 +1,159 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.box{
+	width: 100%;
+	height: 100px;
+	/*使用弹性布局*/
+	display: -webkit-flex;
+	margin-bottom: 20px;
+}
+.red{
+	background: red;
+}
+.blue{
+	background: blue;
+}
+.green{
+	background: green;
+}
+.grey{
+	background: grey;
+}
+.pink{
+	background: pink;
+}
+.yellow{
+	background: yellow;
+}
+.purple{
+	background: purple;
+}
+.w100{
+	width: 100px;
+}
+.w150{
+	width: 150px;
+}
+.w200{
+	width: 200px;
+}
+.w300{
+	width: 300px;
+}
+.w400{
+	width: 400px;
+}
+.mr10{
+	margin-right: 10px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.flex1{
+	/*所占容器比例*/
+	flex:1;
+}
+.flex2{
+	flex:2;
+}
+.flex3{
+	flex:3;
+}
+.fdr{
+	flex-direction:row;
+}
+.fdrr{
+	/*反向*/
+	flex-direction:row-reverse;
+}
+.fdc{
+	flex-direction:column;
+}
+.fdcr{
+	flex-direction:column-reverse;
+}
+.fwn{
+	-webkit-flex-wrap:nowrap;/* default */
+}
+.fww{
+	-webkit-flex-wrap:wrap;
+}
+.fwwr{
+	-webkit-flex-wrap:wrap-reverse;
+}
+.flex-flow{
+	flex-flow:row wrap;
+}
+.wrapper{
+	width: 100%;
+	height: 100px;
+	background: grey;
+	position: relative;
+	margin-bottom: 20px;
+}
+/*不定宽高的水平垂直居中*/
+.myoff-wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	-webkit-transform:translate(-50%,-50%);
+	border-radius: 6px;
+	background: #fff;
+}
+
+/*flexbox版 不定宽高的水平垂直居中*/
+.parent{
+	justify-content:center;/* 子元素水平居中 */
+	align-items:center;/* 子元素垂直居中 */
+	display: -webkit-flex;
+} 
+
+/*效果同float left*/
+.justify-s{
+	justify-content:flex-start;/* default */
+}
+.justify-e{
+	justify-content:flex-end;
+}
+.justify-c{
+	justify-content:center;
+}
+.justify-sb{
+	justify-content:space-between;
+}
+.justify-sa{
+	justify-content:space-around;
+}
+
+.as-fs{
+	align-self:flex-start;
+}
+.as-c{
+	align-self:center;
+}
+.as-fe{
+	align-self:flex-end;
+}
+.as-a{
+	align-self:auto;/* default */
+}
+.as-baseline{
+	align-self:baseline;
+}
+.as-stretch{
+	align-self:stretch;
+}
+
+.aitemfs{
+	/*align-items:flex-start;*/
+	align-items:center;
+}
+
+
+.acontentfs{
+	/* align-content:flex-start; */
+	align-content:center;
+}

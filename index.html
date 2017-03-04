@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flexbox</title>
+	<link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+	<!-- 固定宽度混合flex -->
+	<p>固定宽度混合flex</p>
+	<div class="box">
+		<div class="red w100"></div>
+		<div class="blue flex1"></div>
+		<div class="green flex2"></div>
+	</div>
+
+	<!-- 固定宽度混合flex 带margin-->
+	<p>固定宽度混合flex 带margin</p>
+	<div class="box">
+		<div class="red w150 mr10"></div>
+		<div class="blue flex1"></div>
+		<div class="green w150 ml10"></div>
+	</div>
+
+	<!-- flex-direction default -->
+	<p>flex-direction default</p>
+	<div class="box fdr">
+		<div class="red flex1"></div>
+		<div class="blue flex2"></div>
+		<div class="green flex3"></div>
+	</div>
+
+	<!-- flex-direction row-reverse -->
+	<p>flex-direction row-reverse</p>
+	<div class="box fdrr">
+		<div class="red flex1"></div>
+		<div class="blue flex2"></div>
+		<div class="green flex3"></div>
+	</div>
+	
+	<!-- flex-direction column -->
+	<p>flex-direction column</p>
+	<div class="box fdc">
+		<div class="red flex1"></div>
+		<div class="blue flex2"></div>
+		<div class="green flex3"></div>
+	</div>
+
+	<!-- flex-direction column-reverse -->
+	<p>flex-direction column-reverse</p>
+	<div class="box fdcr">
+		<div class="red flex1"></div>
+		<div class="blue flex2"></div>
+		<div class="green flex3"></div>
+	</div>
+
+	<!-- 不定宽高的水平垂直居中 -->
+	<p> 不定宽高的水平垂直居中</p>
+	<div class="wrapper">
+		<div class="myoff-wrapper">
+			<p>不定宽高的水平垂直居中</p>
+		</div>
+	</div>
+	
+	<!-- flexbox版 不定宽高的水平垂直居中 -->
+	<p>flexbox版 不定宽高的水平垂直居中</p>
+	<div class="box parent grey">
+		<div class="blue">flexbox版 不定宽高的水平垂直居中</div>
+	</div>
+	
+	<!-- flex-wrap nowrap -->
+	<p>flex-wrap nowrap</p>
+	<div class="box fwn w400">
+		<div class="red w100"></div>
+		<div class="blue w200"></div>
+		<div class="green w300"></div>
+	</div>
+
+	<!-- flex-wrap wrap -->
+	<p>flex-wrap wrap</p>
+	<div class="box fww w400">
+		<div class="red w100"></div>
+		<div class="blue w200"></div>
+		<div class="green w300"></div>
+	</div>
+
+	<!-- flex-wrap wrap -->
+	<p>flex-wrap wrap-reverse</p>
+	<div class="box fwwr w400">
+		<div class="red w100"></div>
+		<div class="blue w200"></div>
+		<div class="green w300"></div>
+	</div>
+
+	<!-- flex-flow -->
+	<p>flex-flow</p>
+	<div class="box flex-flow w400">
+		<div class="red w100"></div>
+		<div class="blue w200"></div>
+		<div class="green w300"></div>
+	</div>
+	
+	<!-- justify-content:flex-start; -->
+	<p>justify-content:flex-start;</p>
+	<div class="box justify-s grey">
+		<div class="blue">  效果同float left</div>
+	</div>
+
+	<!-- justify-content:flex-end; -->
+	<p>justify-content:flex-end;</p>
+	<div class="box justify-e grey">
+		<div class="blue">  效果同float right</div>
+	</div>
+
+	<!-- 第三代水平居中 -->
+	<p>justify-content:center;</p>
+	<div class="box justify-c grey">
+		<div class="blue">  第三代水平居中</div>
+	</div>
+
+	<!-- justify-content:space-between; -->
+	<p>justify-content:space-between;</p>
+	<div class="box justify-sb grey">
+		<div class="blue"> space-between</div>
+		<div class="red"> space-between</div>
+	</div>
+
+	<!-- justify-content:space-between; -->
+	<p>justify-content:space-around;</p>
+	<div class="box justify-sa grey">
+		<div class="blue"> space-around</div>
+		<div class="red"> space-around</div>
+	</div>
+	
+	<p>align-self</p>
+	<div class="box grey">
+		<div class="red as-fs">align-self:flex-start;</div>
+		<div class="blue as-fe">align-self:flex-end;</div>
+		<div class="green as-c">align-self:center;</div>
+		<div class="pink as-a">align-self:auto;</div>
+		<div class="yellow as-baseline">align-self:baseline;</div>
+		<div class="purple as-stretch">align-self:stretch;</div>
+	</div>
+	
+	<p>align-items:flex-start; 适用于子元素上</p>
+	<div class="box aitemfs grey fww">
+		<div class="blue mr10">align-items:flex-start;</div>
+		<div class="red mr10">align-items:flex-start;</div>
+		<div class="blue mr10">align-items:flex-start;</div>
+		<div class="red mr10">align-items:flex-start;</div>
+		<div class="blue mr10">align-items:flex-start;</div>
+		<div class="red mr10">align-items:flex-start;</div>
+		<div class="blue mr10">align-items:flex-start;</div>
+		<div class="red mr10">align-items:flex-start;</div>
+	</div>
+	
+	<p>align-content:flex-start; 适用于父级元素上</p>
+	<div class="box acontentfs grey fww">
+		<div class="blue mr10">align-content:flex-start;</div>
+		<div class="blue mr10">align-content:flex-start;</div>
+		<div class="blue mr10">align-content:flex-start;</div>
+		<div class="blue mr10">align-content:flex-start;</div>
+		<div class="blue mr10">align-content:flex-start;</div>
+		<div class="blue mr10">align-content:flex-start;</div>
+	</div>
+
+	<div class="grey">
+		<p>flexbox 兼容性</p>
+		<p>ios 可以使用最新的flex布局</p>
+		<p>android4.4以下 只能兼容旧版flexbox布局</p>
+		<p>android4.4及以上 可以使用最新的flex布局</p>
+	</div>
+
+	<table border="1" style="margin-top:20px;">
+		<tr>
+			<td>新版flex布局</td>
+			<td>旧版flexbox布局</td>
+		</tr>
+		<tr>
+			<td>display:-webkit-flex;</td>
+			<td>display:-webkit-flex-box;</td>
+		</tr>
+		<tr>
+			<td>-webkit-flex:1;</td>
+			<td>-webkit-flex-box:1;</td>
+		</tr>
+		<tr>
+			<td>justify-content:center;</td>
+			<td>box-pack:center;</td>
+		</tr>
+		<tr>
+			<td>align-items:center;</td>
+			<td>box-align:center;</td>
+		</tr>
+	</table>
+	
+	<p>响应式设计</p>
+	<div class="box blue">
+		<pre class="blue flex1">
+			媒体类型:
+			screen(屏幕)
+			print(打印机)
+			handheld(手持设备)
+			all(通用)
+		</pre>
+		<pre class="green flex2">
+			常用媒体查询参数：
+			width——视口宽高
+			height——视口宽高
+			device-width——设备的宽度
+			devive-height——设备的高度
+			orientation：检查设备处于横向（landscape）还是竖向（portrait）
+		</pre>
+	</div>
+</body>
+</html>

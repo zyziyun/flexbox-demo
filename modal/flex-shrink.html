@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-shrink</title>
+	<style>
+	#flex{
+		display: -webkit-flex;
+		display: flex;
+		width: 400px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#flex li{
+		width: 200px;
+	}
+	#flex li:nth-child(1){
+		background-color: #888;
+	}
+	#flex li:nth-child(2){
+		background-color: #ccc;
+	}
+	#flex li:nth-child(3){
+		-webkit-flex-shrink:3;
+		flex-shrink:3;
+		background-color: #aaa;
+	}
+	</style>
+</head>
+<body>
+	<h2>flex-shrink</h2>
+	<ul id="flex">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+</body>
+</html>
